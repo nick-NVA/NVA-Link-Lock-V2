@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Locker Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Create a Locked URL</h1>
+        <p>Enter the URL you want to lock and a PIN.</p>
+        <p class="warning"><strong>Warning:</strong> This method is not highly secure. Do not use for sensitive data.</p>
+
+        <label for="targetUrl">Website URL:</label>
+        <input type="url" id="targetUrl" placeholder="https://example.com" required>
+
+        <label for="pin">PIN (numbers or text):</label>
+        <input type="password" id="pin" placeholder="Enter PIN" required>
+
+        <button id="generateBtn">Generate Locked URL</button>
+
+        <div id="resultArea" style="display: none;">
+            <h2>Your Locked URL:</h2>
+            <textarea id="lockedUrlOutput" rows="3" readonly></textarea>
+            <button id="copyBtn">Copy URL</button>
+            <p id="copyMessage" style="display: none; color: green;">Copied!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
