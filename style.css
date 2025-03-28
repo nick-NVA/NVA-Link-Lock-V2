@@ -1,3 +1,16 @@
+.logo-banner {
+    display: block;         /* Allows margins auto to work for centering */
+    max-width: 700px;       /* Prevents the image from getting wider than 700px.
+                               Adjust this value up or down to make the logo
+                               bigger or smaller on wider screens. */
+    width: 90%;           /* Makes the image take up 90% of its container's width,
+                               but it won't exceed the max-width above.
+                               Adjust % for responsiveness preference. */
+    height: auto;         /* Keeps the image's aspect ratio correct */
+    margin-left: auto;    /* Centers the image horizontally */
+    margin-right: auto;   /* Centers the image horizontally */
+    margin-bottom: 30px;  /* Adds space below the logo (adjust as needed) */
+}
 body {
     font-family: sans-serif;
     display: flex;
